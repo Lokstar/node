@@ -1,0 +1,15 @@
+<img id='zarowka' src='../img/lightOFF.png' alt='' width='50px' height='50px'/>
+<script>
+var lightBubble = false;
+
+$('#zarowka').click(function(e){
+console.log('WLACZA');
+    if(lightBubble){
+	$(this).attr('src', "../img/lightOFF.png");    
+	lightBubble = false;    
+    }else{
+	$(this).attr('src', "../img/light1ON.png");
+	
+	lightBubble = true;         
+  }
+});
