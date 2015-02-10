@@ -14,11 +14,23 @@ out += " temp: " + temp1 + "*C" + " cisn: " + data.main.pressure + "hPa";
 	out = "";
 	
 	socket.on('update temperature', function(temperature) {
-	console.log(temperature);
-$('#temperatura').html(temperature);
-});
+	
+		console.log(temperature);
+
+		$('#temperatura').html(temperature);	
+	});
+
+	setInterval (function(){
+		$('#right3').html('<img src="../../image.jpg"></img>');
+		$('#test').html('<img src="../../image1.jpg"></img>');
+
+
+			
+	}, 10000);
 	
 });
+
+
 
 function buttonClick(clicked_id){
 
