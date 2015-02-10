@@ -21,13 +21,13 @@ out += " temp: " + temp1 + "*C" + " cisn: " + data.main.pressure + "hPa";
 	});
 
 	setInterval (function(){
-		$('#right3').html('<img src="../../image.jpg"></img>');
-		$('#test').html('<img src="../../image1.jpg"></img>');
+		var rand = Math.floor((Math.random() * 1000000) + 1);
+		$('#right3').html('<img src="../../image.jpg?nocache='+rand+'"></img>');
+		$('#test').html('<img src="../../image1.jpg?nocache='+rand+'"></img>');
 
-
+		console.log('aaa');
 			
-	}, 10000);
-	
+	}, 10000);	
 });
 
 
